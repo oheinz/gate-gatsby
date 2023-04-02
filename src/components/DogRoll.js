@@ -43,9 +43,6 @@ const DogRollTemplate = (props) => {
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
                 </p>
               </header>
               <p>
@@ -78,7 +75,7 @@ export default function DogRoll() {
       query={graphql`
         query DogRollQuery {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: DESC, fields: [frontmatter___title] }
             filter: { frontmatter: { templateKey: { eq: "dog-post" } } }
           ) {
             edges {
@@ -91,7 +88,6 @@ export default function DogRoll() {
                 frontmatter {
                   title
                   templateKey
-                  date(formatString: "MMMM DD, YYYY")
                   featuredpost
                   featuredimage {
                     childImageSharp {
