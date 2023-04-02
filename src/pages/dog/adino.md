@@ -1,10 +1,6 @@
 ---
 templateKey: dog-post
 title: Adino
-description: |-
-  Nume: Adino,
-  Sex: mascul (castrat),
-  Născut în: 12.2018
 featuredpost: true
 featuredimage: /img/adino_head.jpg
 tags:
