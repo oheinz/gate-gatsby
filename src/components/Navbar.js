@@ -43,7 +43,6 @@ const Navbar = () => {
               Câinii noștri
             </Link>
             </li>
-          </li>
         </ul>
       </div>
     </nav>
