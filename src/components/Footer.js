@@ -10,11 +10,11 @@ import vimeo from "../img/social/vimeo.svg";
 const Footer = () => {
   
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer has-background-white has-text-black-ter">
         <div className="content has-text-centered">
           <img
             src={logo}
-            alt="Kaldi"
+            alt="GATE"
             style={{ width: "14em", height: "10em" }}
           />
         </div>
@@ -35,16 +35,6 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -62,12 +52,7 @@ const Footer = () => {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
+                        Câinii noștri
                       </Link>
                     </li>
                   </ul>
