@@ -15,20 +15,6 @@ const Footer = () => {
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
               </div>
               <div className="column is-4">
               <p>Această pagină statică nu înregistrează și nici nu prelucrează date cu caracter personal. Nu avem o politică de cookie-uri - cu excepția câinilor noștri.</p>
