@@ -27,7 +27,6 @@ const Navbar = () => {
             <span />
             <span />
           </button>
-          <p>Această pagină statică nu înregistrează și nici nu prelucrează date cu caracter personal. Nu avem o politică de cookie-uri - cu excepția câinilor noștri.</p>
         </div>
         <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
             {/* TODO: inline override of padding is a result of refactoring

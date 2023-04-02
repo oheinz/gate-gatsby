@@ -31,6 +31,7 @@ const Footer = () => {
                 </section>
               </div>
               <div className="column is-4">
+              <p>Această pagină statică nu înregistrează și nici nu prelucrează date cu caracter personal. Nu avem o politică de cookie-uri - cu excepția câinilor noștri.</p>
               </div>
               <div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
