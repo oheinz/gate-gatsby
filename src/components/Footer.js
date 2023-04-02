@@ -18,11 +18,6 @@ const Footer = () => {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -36,15 +31,6 @@ const Footer = () => {
                 </section>
               </div>
               <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Câinii noștri
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
               </div>
               <div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
