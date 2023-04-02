@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
-const DogRollTemplate = (props) => {
+const BlogRollTemplate = (props) => {
   
   const { edges: posts } = props.data.allMarkdownRemark;
 
@@ -14,7 +14,7 @@ const DogRollTemplate = (props) => {
         posts.map(({ node: post }) => (
           <div className="is-parent column is-6" key={post.id}>
             <article
-              className={`dog-list-item tile is-child box notification ${
+              className={`blog-list-item tile is-child box notification ${
                 post.frontmatter.featuredpost ? 'is-featured' : ''
               }`}
             >
@@ -43,6 +43,9 @@ const DogRollTemplate = (props) => {
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
+                  <span className="subtitle is-size-5 is-block">
+                    {post.frontmatter.date}
+                  </span>
                 </p>
               </header>
               <p>
@@ -60,7 +63,7 @@ const DogRollTemplate = (props) => {
   )
 }
 
-DogRoll.propTypes = {
+BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -69,14 +72,14 @@ DogRoll.propTypes = {
 }
 
 
-export default function DogRoll() {
+export default function BlogRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query DogRollQuery {
+        query BlogRollQuery {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___title] }
-            filter: { frontmatter: { templateKey: { eq: "dog-post" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
           ) {
             edges {
               node {
@@ -88,6 +91,7 @@ export default function DogRoll() {
                 frontmatter {
                   title
                   templateKey
+                  date(formatString: "MMMM DD, YYYY")
                   featuredpost
                   featuredimage {
                     childImageSharp {
@@ -105,7 +109,7 @@ export default function DogRoll() {
           }
         }
       `}
-      render={(data, count) => <DogRollTemplate data={data} count={count} />}
+      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
     />
   );
 }
