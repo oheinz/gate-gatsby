@@ -80,7 +80,7 @@ export default function DogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 300)
                 id
                 fields {
                   slug
