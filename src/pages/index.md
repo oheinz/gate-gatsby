@@ -9,10 +9,9 @@ mainpitch:
   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
     diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
 intro:
   blurbs: []
   heading: What we offer
