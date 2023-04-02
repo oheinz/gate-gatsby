@@ -13,6 +13,8 @@ Familia are în continuare o legătură strânsă, dar până acum se amestecă 
 
 Aladdin se află în adăpost de foarte mult timp și nu prea știe nimic despre lume. Adăpostul este lumea lui și orice altceva îi va fi străin la început. Dar dacă faceți efortul de a redescoperi lumea împreună cu acest câine, veți obține un prieten pe viață, chiar dacă poate dura 6,8,12 luni! Nu uitați să citiți pagina noastră despre sindromul de deprivare.
 
+![](/img/aladdin02.jpg)
+
 Unde sunt oamenii lui Aladin cu casă, grădină și coș?
 Din păcate, nu putem spune cum se comportă cu copiii, pisicile și animalele mici.
 
