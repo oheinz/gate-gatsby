@@ -10,7 +10,6 @@ import Content, { HTMLContent } from "../components/Content";
 export const DogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   helmet,
@@ -26,7 +25,6 @@ export const DogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -50,7 +48,6 @@ export const DogPostTemplate = ({
 DogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 };
@@ -63,14 +60,9 @@ const DogPost = ({ data }) => {
       <DogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Dog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -95,7 +87,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        description
         tags
       }
     }
