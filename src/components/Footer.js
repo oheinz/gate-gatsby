@@ -11,13 +11,6 @@ const Footer = () => {
   
     return (
       <footer className="footer has-background-white has-text-black-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="GATE"
-            style={{ width: "14em", height: "10em" }}
-          />
-        </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
@@ -27,11 +20,6 @@ const Footer = () => {
                     <li>
                       <Link to="/" className="navbar-item">
                         Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
                       </Link>
                     </li>
                     <li>
