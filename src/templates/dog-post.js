@@ -26,9 +26,6 @@ export const DogPostTemplate = ({
               {title}
             </h1>
             <PostContent content={content} />
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
